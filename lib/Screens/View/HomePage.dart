@@ -3,6 +3,10 @@ import 'dart:ui'as ui;
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../Modal/Exam_Modal.dart';
+import '../Provider/Exam_Provider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -24,13 +28,10 @@ class HomePage extends StatelessWidget {
                 Container(
                   height: double.infinity,
                   width: double.infinity,
-                  child: Image.asset(
-                    'assets/images/images.jpg',
-                    fit: BoxFit.cover,
-                  ),
+
                 ),
                 RepaintBoundary(
-                  key: imgkey,
+                  // key: imgkey,
                   child: Container(
                     height: double.infinity,
                     width: double.infinity,
@@ -48,7 +49,7 @@ class HomePage extends StatelessWidget {
                                 },
                                 child: Icon(
                                   Icons.refresh,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   size: 35,
                                 ),
                               ),
@@ -61,7 +62,7 @@ class HomePage extends StatelessWidget {
                             textAlign: TextAlign.center,
                             '${joke!.setup}',
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 30,
                                 fontWeight: FontWeight.bold),
                           ),
@@ -74,14 +75,14 @@ class HomePage extends StatelessWidget {
                                   TextSpan(
                                     text: 'Punchline : ',
                                     style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.black,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20),
                                   ),
                                   TextSpan(
                                     text: '${joke.punchline}',
                                     style: TextStyle(
-                                        color: Colors.white, fontSize: 20),
+                                        color: Colors.black, fontSize: 20),
                                   )
                                 ],
                               ),
@@ -100,7 +101,7 @@ class HomePage extends StatelessWidget {
                                   },
                                   icon: Icon(
                                     Icons.favorite,
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     size: 30,
                                   )),
                               // IconButton(
@@ -155,7 +156,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
-
+bool fav = false;
 
 
 

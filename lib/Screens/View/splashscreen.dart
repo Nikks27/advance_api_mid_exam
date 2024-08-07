@@ -1,31 +1,36 @@
 import 'dart:async';
-
-import 'package:advance_api_mid_exam/Screens/View/HomePage.dart';
 import 'package:flutter/material.dart';
+
+import 'HomePage.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    Timer(Duration(seconds: 3),(){
-      Navigator.of(context).pushReplacement(PageRouteBuilder(pageBuilder: (context, animation, secondaryAnimation) => Homepage(),),);
-    } );
+    Timer(
+        Duration(seconds: 4),
+            (){
+          Navigator.of(context).pushReplacementNamed('/home');
+        }
+    );
     return Scaffold(
-        body:Center(
-          child: Container(
-            height: 200,
-            width: 200,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            height: 600,
+            width: 600,
             decoration: BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(
-                        'assets/images/jokes logo.jpg'
-                    )
+              image: DecorationImage(
+                image: AssetImage(
+                  'assets/images/spashscreen.webp'
                 )
+              )
             ),
           ),
-        )
+        ],
+      ),
     );
   }
 }

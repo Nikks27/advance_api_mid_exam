@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 
 
-class RandomJokes
+class JokesModal
 {
-  String? type;
-  String? setup;
-  String? punchline;
-  int? id;
+  late String type,setup,punchline;
+  late int id;
 
-  RandomJokes({required this.id,required this.type,required this.punchline,required this.setup});
+  JokesModal(this.type, this.setup, this.punchline, this.id);
 
-factory RandomJokes.fromjson(Map m1 ){
-  return RandomJokes(id: m1['id'], type: m1['type'], punchline: m1['punchline'], setup: m1['setup']);
-}
-
+  factory JokesModal.fromJson(Map m1)
+  {
+    return JokesModal(m1['type'] ?? '', m1['setup'] ?? '', m1['punchline'] ?? '', m1['id'] ?? 0);
+  }
 }
