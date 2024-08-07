@@ -104,36 +104,6 @@ class HomePage extends StatelessWidget {
                                     color: Colors.black,
                                     size: 30,
                                   )),
-                              // IconButton(
-                              //     onPressed: () async {
-                              //       {
-                              //         RenderRepaintBoundary boundry = imgkey
-                              //             .currentContext!
-                              //             .findRenderObject()
-                              //         as RenderRepaintBoundary;
-                              //
-                              //         ui.Image image = await boundry.toImage();
-                              //         ByteData? byteData =
-                              //         await image.toByteData(
-                              //             format: ui.ImageByteFormat.png);
-                              //
-                              //         Uint8List img =
-                              //         byteData!.buffer.asUint8List();
-                              //
-                              //         final imgpath =
-                              //         await getApplicationDocumentsDirectory();
-                              //         final file =
-                              //         File("${imgpath.path}/img.png");
-                              //
-                              //         file.writeAsBytes(img);
-                              //         ShareExtend.share(file.path, 'image');
-                              //       }
-                              //     },
-                              //     icon: Icon(
-                              //       Icons.share,
-                              //       color: Colors.white,
-                              //       size: 25,
-                              //     ))
                             ],
                           )
                         ],
