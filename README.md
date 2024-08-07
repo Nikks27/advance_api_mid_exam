@@ -1,16 +1,27 @@
 # advance_api_mid_exam
 
-A new Flutter project.
+<h1 align="center"> 1.Jokes App</h1>
 
-## Getting Started
+<h1 align="left"></h1>
 
-This project is a starting point for a Flutter application.
+<div align ="center">
 
-A few resources to get you started if this is your first Flutter project:
+  <img src = "https://github.com/user-attachments/assets/b3e30ead-b183-4a5b-bffd-3b0dd4ff3f59" height ="550">
+  <img src = "https://github.com/user-attachments/assets/73831953-ab88-4465-a030-9f55e5fb79ae" height ="550">
+  <img src = "https://github.com/user-attachments/assets/f28ebf09-8631-4504-b036-884119a8db96" height ="550">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+https://github.com/user-attachments/assets/3409be91-112d-4d6f-918c-6c30ff6cf451
+
+
+
+
+
+
+  
+
+
+
+
+</div>
