@@ -15,11 +15,6 @@ class JokesProvider extends ChangeNotifier {
     return jokesModal;
   }
 
-  void referesh(){
-    final data = apiHelper.fetchData();
-    notifyListeners();
-  }
-
   Future<void> addToFavourite(String joks , String punchline ,String id)
   async {
     String data = '$joks-$punchline-$id';
@@ -29,16 +24,5 @@ class JokesProvider extends ChangeNotifier {
     sharedPreferences.setStringList('jokes', jokes);
   }
 
-  Future<void> getFacvouriteData()
-  async {
-    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-    jokes = sharedPreferences.getStringList('jokes') ?? <String>[];
-    notifyListeners();
-  }
-
-  JokesProvider()
-  {
-    getFacvouriteData();
-  }
 
 }
